@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>String Extractor</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-6 mx-auto">
+        <h4 class="no-highlight">String Extractor</h5>
+          <span class=" no-highlight" onclick="toggle();" id="edit-strings-btn"><i class="bi bi-caret-right"></i>Customize strings</span>
+          <div class="row g-2 mt-2" id="strings-editable">
+            <div class="col-md">
+              <div class="form-floating">
+                <input class="form-control" id="extractor-opening-input" type="text" placeholder="Start String" value="">
+                <label for="extractor-opening-input">Start String</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <input class="form-control" id="extractor-closing-input" type="text" placeholder="End String" value="">
+                <label for="extractor-closing-input">End String</label>
+              </div>
+            </div>
+          </div>
+          <textarea class="form-control mt-3" id="extractor-textarea" rows="8" placeholder="Content"></textarea>
+          <textarea class="form-control mt-3" id="extractor-hidden-clipboard-output" placeholder="Output"></textarea>
+          <div class="row g-2">
+            <div class="col-6">
+              <div class="d-grid"><button class="btn btn-danger mt-3" id="clear-btn">Clear</button></div>
+            </div>
+            <div class="col-6">
+              <div class="d-grid"><button class="btn btn-success mt-3" id="copy-btn">Copy Output</button></div>
+            </div>
+          </div>
+      </div>
+      <div class="col-5">
+        <h4 class="text-secondary text-center no-highlight mb-5">Output (<span id="list-total-count">0</span>)</h4>
+        <span id="duplicate-lni-notification-container"></span>
+        <div class="extractor-results-container">
+          <span id="extractor-results"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

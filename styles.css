@@ -1,0 +1,37 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.output-placeholder {
+  position: relative;
+  top: -10%;
+  left: 40%;
+}
+
+#extractor-hidden-clipboard-output {
+  position: absolute;
+  top: -99%;
+  left: -99%;
+  width: 1px;
+  height: 1px;
+}
+
+#edit-strings-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.extractor-results-container {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.no-highlight {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
